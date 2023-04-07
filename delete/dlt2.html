@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+        .main{
+            display: flex;
+          
+            justify-content: center;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        @media screen and (max-width:420px){
+            .main{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .one a{
+                display: flex;
+                justify-content: center;
+            }
+            a{
+                width: 100%;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one"> <a href="#"> one </a></div>
+        <div class="one"> <a href="#"> two </a></div>
+        <div class="one"> <a href="#"> three </a></div>
+        <div class="one"> <a href="#"> four </a></div>
+    </div>
+</body>
+</html>

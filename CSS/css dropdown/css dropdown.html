@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css dropdown</title>
+    <style>
+        .abc{
+            position: relative;
+            display: inline-block;
+        }
+        .xyz{
+            position: absolute;
+            display: none;
+        }
+        .abc:hover .xyz{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="abc">
+        <span> touch me here to see magic </span>
+        <div class="xyz">Hello World</div>
+    </div>
+</body>
+</html>

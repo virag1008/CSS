@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position assignment</title>
+    <style>
+        body{
+            box-sizing: border-box;
+          
+        }
+        
+        .nav1{
+            border: 1px solid;
+            background-color: aquamarine;
+            text-align: center;
+            position: fixed;
+            left: 10px;
+            right: 10px; 
+            z-index: 2;
+            line-height: 15px;
+        }
+        .vj{
+            margin-top: 87px;
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        .relative{
+            border: 3px solid;
+            position: relative;
+            height: 300px;
+            background-image: linear-gradient(aquamarine,rgb(60, 114, 16)) ;
+            
+        }
+        .absolute{
+            position: absolute;
+            border: 1px solid rgb(240, 229, 229);
+            left: 250px;
+            right: 250px;
+            margin-top: 0px;
+            box-shadow: 5px 5px 9px white;
+
+        }
+
+        .sticky{
+            border: 1px solid peru;
+            position: sticky;
+            top: 98px;
+            background-color: rgb(60, 114, 16);
+            text-align: center;
+            line-height: 15px;
+        }
+        .sticky ul li{
+            display: inline-block;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 12px;
+            background-color: rgb(8, 47, 63);
+            color: bisque;
+            
+        }
+        section{
+            font-size: 22px;
+           
+            padding: 145px;
+        }
+        img{
+            height:650px;
+            width:100%;  
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="nav1">
+            <h1>this is position fix</h1>
+            <p> this is header part    </p>
+        </div>
+        <br>
+
+        <div class="vj">
+            <div class="relative">
+
+                <h2> i m position relative </h2>
+                <p> this is parent div </p>
+
+                <div class="absolute">
+                    <h3> i m position absolute </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, rem cumque itaque alias magni nam impedit dolores unde nostrum voluptates delectus, repudiandae modi? Quidem corrupti ipsum harum facilis iste vero, architecto doloremque hic nisi?</p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="sticky">
+            <ul>
+                <li> one </li>
+                <li> two </li>
+                <li> three </li>
+                <li> four </li>
+            </ul>
+             <h1>position sticky</h1>
+        </div>
+
+        <div class="footer">
+            <img src="123.jpg" alt="123" >
+        </div>
+
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto delectus consequuntur quidem animi earum rerum enim deleniti aut, et ex dignissimos praesentium sapiente adipisci blanditiis assumenda porro qui corporis inventore aspernatur ratione nemo perferendis totam. Voluptatem ducimus ea error, autem quia incidunt? Voluptates praesentium, rerum ipsum soluta a, eveniet eos necessitatibus sint asperiores natus inventore laborum omnis assumenda molestias quisquam veritatis reprehenderit itaque, ut odio unde pariatur nihil! Sequi, repudiandae molestiae quasi dolore voluptates neque officiis obcaecati excepturi maxime earum dolorum placeat at repellat, mollitia magni aperiam quod nulla quaerat! Sequi nam, veritatis officia eaque assumenda facere culpa repellat. Minus.</section>
+
+    </div>
+</body>
+</html>

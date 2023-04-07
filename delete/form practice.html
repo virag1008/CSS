@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            font-size: 20px;
+            padding: 15px;
+        }
+        input:focus{
+            border: 5px solid red;
+        }
+        input:hover{
+            background-color: aquamarine;
+        }
+        table,td, th {
+            border: 1px solid ;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        tr:nth-child(odd){
+            background-color: aquamarine;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="/action_page.php">
+    <label for="name"> Name </label>
+    <input type="text" id="name" name="name" placeholder="first name" size="29">
+    <br><br><br><br>
+    <select name="cars" value="car1"> 
+        <option value="car1">car 1</option>
+        <option value="car2">car 2</option>
+        <option value="car3">cars 3</option>
+
+    </select>
+
+    <input type="checkbox" name="as" id="as" value="as">
+    <label for="as">as</label>
+    <input type="checkbox" name="hg" id="hg" >
+    <label for="hg">hg</label>
+<br>
+    <input type="radio" name="one" value="123" id="fr">
+    <label for="fr">fr</label>
+
+    <br>
+    <input type="radio" name="one" value="233" id="fp">
+    <label for="fp">fp</label>
+
+    <br><br><br><br>
+    <input type="submit" >
+    <br><br><br>
+    <textarea name="tp" placeholder="ghj" rows="3"></textarea>
+      <br>
+     <input type="date" name="date">
+     <input type="email">
+
+     <input list="vbn" name="vbn">
+     <datalist id="vbn">
+        <option value="car1"></option>
+        <option value="car2">car 2</option>
+        <option value="car3">cars 3</option>
+     </datalist>
+
+     <video src="/Horse.mp4" height="300px" controls autoplay loop >
+
+     </video>
+
+
+
+
+
+    </form>
+    <br>
+
+    <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </table>
+</body>
+</html>

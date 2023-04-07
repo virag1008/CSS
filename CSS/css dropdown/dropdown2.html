@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown2</title>
+    <style>
+        .one{
+            position: relative;
+            display: inline-block;
+
+        }
+        .two{
+            position: absolute;
+            display: none;
+        }
+        .two a{
+            display: block;
+        }
+        .one:hover.two{
+            display: block;
+        }
+        .btn{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <button class="btn">DROPDOWN</button>
+        <DIV class="two">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+        </DIV>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo elements</title>
+    <style type="text/css" >
+        body{
+            text-align: center;
+        }
+        h1{
+            color: blue;
+        }
+        h1::first-letter{
+            font-family:lucidia calligraphy;
+            font-size: 3cm;
+            color: red;
+            text-shadow: 5px 8px 9px greenyellow;
+
+        }
+        h2::first-line{
+            font-family:lucidia calligraphy;
+            font-size: 1.3cm;
+            color: red;
+            text-shadow: 5px 8px 9px blue;
+        }
+        h3::before{
+            content: "Hello World 1";
+            color: red;
+        }
+        h4::after{
+            content:"Welcome to learn weRn";
+            color: orange;
+        }
+        h1::selection{
+            color: red;
+            background-color: yellow;
+        }
+        span::selection{
+            color: red;
+            background-color: yellow;
+        }
+         /* selection and after cha use karun aapn shapes tayar karu shakto (mostly not used) */
+        #curvedarrow{
+            margin: 0 auto;
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 10px solid red;
+            transform: rotate(10deg);
+        }
+        #curvedarrow::after{
+            content:"";
+            position:absolute;
+            border: 0 solid transparent;
+            border-top:3px solid red;
+            border-radius: 20px 0 0;
+            top: -12px;
+            left: -9px;
+            width: 15px;
+            height: 15px;
+            transform: rotate(45deg);
+        }
+        ::marker{
+            color:red;
+            font-size: 20px;
+        }
+        /* dot or number style hotat */
+        ul,ol {
+            text-align: left;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- psudo elements used double colon[::] -->
+    <!-- psudo elements used to style specific part of an element -->
+    <!-- psudo elements are 1.first letter 2.first line 3.before 4.after 5.selection-->
+
+    <!-- 1.FIRST LETTER PSUDO LETTER
+    we canot used this property to all CSS it has some limitation-for some basic things we can apply this like color etc
+    we cant used it for animation color grading etc  -->
+
+    <h1>Welcome to ::first letter::psudo element</h1>
+
+    <!-- 2.FIRST LINE PSUDO LETTER
+    we canot used this property to all CSS it has some limitation-for some basic things we can apply this like color etc
+    we cant used it for animation color grading etc -->
+    <!-- this apply ONLY for first line iff we zoom the text then also fir the only first line -->
+
+    <h2>Welcome to ::first line::psudo element - its wonderful experience</h2>
+
+    <!-- 3.before PSUDO LETTER -->
+    <!-- before added elements  are not selectable to the browser -->
+    <h3> "hello world" is added using ::before::psudo element</h3>
+
+    <!-- 4.AFTER PSUDO LETTER -->
+    <!-- AFTER added elements  are not selectable to the browser -->
+    <h4> hello world</h4>
+    <P>In upper line "welcome to learnvern" is added using ::AFTER:: PSUDO ELEMENT </P>
+
+    <!-- 5.SELECTION PSUDO LETTER -->
+    <!-- selected portion color shifted to red and background color yellow -->
+    <span>selected portion color shifted to red and background color yellow..for only first and this line </span>
+    <br><br><br><br>
+
+    <div id="curvedarrow"></div>
+
+    <br>
+
+    <ul>
+        <li> black </li>
+        <li> blue </li>
+        <li> red </li>
+    </ul>
+    <ol>
+        <li> black </li>
+        <li> blue </li>
+        <li> red </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table with combinators</title>
+    <style type="text/css">
+        body{            
+            background-color: grey;
+        }
+        table, th,td{
+            border: 1px solid black;
+            /* border-collapse: collapse; */
+            padding: 0px;
+            font-size: 15px;
+            text-align:center;
+        }
+        table{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;           
+            margin: auto;
+        }
+        th{
+            background-color: purple;
+            text-transform: uppercase;
+            color: white;
+            padding: 10px;
+            text-shadow: 5px 6px 7px rgb(69, 69, 204);
+        }
+        td:nth-child(6n+1){
+            background-color: rgb(85, 146, 182);
+            text-align: center;
+        }
+        td:nth-child(6n+2){
+            background-color: green;
+        }
+        td:nth-child(6n+3){
+            background-color: fuchsia;
+        }
+        td:nth-child(6n+4){
+            background-color: rosybrown;
+        }
+        td:nth-child(6n+5){
+            background-color: bisque;
+            color: blue;
+        }
+        div{
+            overflow: hidden;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div style="color:white; background-color: rgb(190, 33, 33); text-align: center; text-shadow: 6px 7px 9px yellowgreen; font-family: Verdana, Geneva, Tahoma, sans-serif;"><h1> UNESCO Worlds Heritage Sites in Maharashtra </h1></div>
+    <div>
+    <table>
+        <thead>
+            <tr >
+                <th class="one">Heritage Site Name</th>
+                <th>photo</th>
+                <th>Location</th>
+                <th>history</th>
+                <th>website</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ellora Caves</td>
+                <td><img src="/chap 2/ellora.jpg" alt="ellora image" height="100px"> </td>
+                <td>Aurangabad</td>
+                <td>Ellora, also called Verul or Elura, is the short form of the ancient name Elloorpuram.[10] The older form of the name has been found in ancient references such as the Baroda inscription of 812 CE which mentions "the greatness of this edifice" and that "this great edifice was built on a hill by Krishnaraja at Elapura, the edifice in the inscription being the Kailasa temple.</td>
+                <td><a href="https://en.wikipedia.org/wiki/Ellora_Caves" target="_blank">For more info click here </a></td>
+                
+            </tr>
+            <tr>
+                <td>Elephanta Caves</td>
+                <td><img src="/chap 2/Elephanta.jpg" alt="ellora image" height="100px"></td>
+                <td>Mumbai</td>
+                <td>The Elephanta Caves are a collection of cave temples predominantly dedicated to the Hindu god Shiva.The Elephanta Caves contain rock cut stone sculptures, mostly in high relief, that show syncretism of Hindu and Buddhist ideas and iconography.They were named Elefante – which morphed to Elephanta – by the colonial Portuguese who found elephant statues on the caves. They established a base on the island.</td>
+                <td><a href="https://en.wikipedia.org/wiki/Elephanta_Caves" target="_blank">For more info click here </a></td>
+                
+            </tr>
+            <tr>
+                <td>Victorian Gothic & Art Deco Ensembles of Mumbai</td>
+                <td><img src="/chap 2/Victorian.jpg" alt="ellora image" height="100px"></td>
+                <td>Mumbai</td>
+                <td>This collection of the Victorian Gothic buildings and Art Deco buildings are set around the Oval Maidan, a large recreational ground that was once known as the Esplanade.The 19th century Victorian Gothic buildings that lie to the east of the Oval are mainly the Mumbai High Court, The University of Mumbai and The City Civil and Sessions Court. This stretch also houses one of the landmarks of Mumbai, the Rajabai Clock Tower. </td>
+                <td><a href="https://en.wikipedia.org/wiki/The_Victorian_and_Art_Deco_Ensemble_of_Mumbai" target="_blank">For more info click here </a></td>
+                
+            </tr>
+            <tr>
+                <td>Chhatrapathi Shivaji Terminus </td>
+                <td><img src="/chap 2/cst.jpg" alt="ellora image" height="100px"></td>
+                <td>CSMT Mumbai</td>
+                <td>The terminus was designed by a British born architectural engineer Frederick William Stevens from an initial design by Axel Haig, in an exuberant Italian Gothic style. Its construction began in 1878, in a location south of the old Bori Bunder railway station,[5] and was completed in 1887, the year marking 50 years of Queen Victoria's rule.</td>
+                <td><a href="https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Terminus" target="_blank">For more info click here </a></td>
+                
+            </tr>
+            <tr>
+                <td>Ajanta Caves</td>
+                <td><img src="/chap 2/Ajanta.jpg" alt="ellora image" height="100px"></td>
+                <td>Aurangabad</td>
+                <td>The Ajanta Caves are generally agreed to have been made in two distinct phases, the first during the 2nd century BCE to 1st century CE, and a second several centuries later.
+                    The caves consist of 36 identifiable foundations, some of them discovered after the original numbering of the caves from 1 through 29. The later-identified caves have been suffixed with the letters of the alphabet, such as 15A, identified between originally numbered caves 15 and 16.</td>
+                <td><a href="https://en.wikipedia.org/wiki/Ajanta_Caves" target="_blank">For more info click here </a></td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
+</body>
+</html>

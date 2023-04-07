@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .one{
+            background-color: rgb(189, 30, 189);
+            color: white;
+            padding: 15px;
+        }
+        .two{
+            float: left;
+            width: 18%;
+            height: 400px;
+        }
+        li{
+            list-style-type: none;
+            width: 170px;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: rgb(11, 212, 212);
+            color: white;
+            font-size: 17px;
+            box-shadow: 2px 5px 7px gray;
+        }
+        
+        ul{
+            padding: 0;
+        }
+        .three{
+            float: left;
+            width: 62%;
+            height: 400px;
+        }
+        .four{
+            height: 400px;
+            float: left;
+            width: 20%;  
+        }
+        .tp{
+            margin:20px 10px;
+            background-color: rgb(11, 212, 212);
+            box-shadow: 2px 5px 7px gray;
+            height: 350px;
+            text-align: center;
+            color: white;
+        }
+        footer{
+            background-color:rgb(11, 212, 212) ;
+            height: 75px;
+            text-align: center;
+            clear: both;
+            padding: 25px;
+            color: white;
+        }
+        @media screen and (max-width:915px){
+            .two{
+                height: 230px;
+            }
+            
+            .three{
+                float: right;
+                width: 72%;
+                height: 230px;
+            }
+            .four{
+                width: 100%;
+            }
+            
+
+            
+        }
+        @media screen and (max-width:500px){
+            .two{
+                display: block;
+                width: 100%;
+                height: 220px;
+            }
+            .three{
+                width: 100%;
+                height: 180px;
+            }
+            .four{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>Chania</h1>
+    </div>
+
+    <div class="main">
+        <div class="two">
+            <ul>
+                <li>The Flight</li>
+                <li>The city</li>
+                <li>The Food</li>
+                <li>The Island</li>
+            </ul>
+        </div>
+
+        <div class="three">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        </div>
+
+        <div class="four">
+            <div class="tp">
+                <h1>What?</h1>
+                <p>Chania is a city on the island of Crete.</p>
+
+                <h1>Where?</h1>
+                <p>Crete is a Greek island in the Mediterranean Sea.</p>
+
+                <h1>How?</h1>
+                <p>You can reach Chania airport from all over Europe.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>Resize the browser window to see how the content respond to the resizing.</footer>
+</body>
+</html>

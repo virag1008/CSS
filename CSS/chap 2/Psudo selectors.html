@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo selectors</title>
+    <style type="text/css">
+        .background-lightgreen{
+            background-color: lightgreen;
+            padding: 10px;
+            text-align: center;
+        }
+        .background-lightgreen:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+        /* hover = tya point vr curser gelyavar effect dakhavne  */
+
+        .background-anchor{
+            text-align: center;
+            background-color: azure;
+        }
+        .background-anchor a:active{
+            color: red;
+        }
+        .background-anchor a:visited{
+            color: black;
+
+        }
+        #visit:visited{
+            color: yellow;
+        }
+        p:lang(fr){
+            color: blue;
+        }
+        input:focus{
+            border: 5px solid lightblue;
+            box-shadow: 10px 10px 10px black;
+            color: blue;
+            width: 300px;
+        }
+        h3:nth-child(3n+1) {
+            color: red;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="background-lightgreen">
+        <!-- class chi ji value aste tyat space nahi det -->
+        <p>This is a div tag </p>
+    </div>
+
+    <div class="background-anchor">
+       <a href="https://www.learnvern.com/" target="_blank">  This is learnvern link </a>
+    </div>
+
+    <a id="visit"  href="https://www.learnvern.com/" target="_blank">  This is learnvern link </a>
+
+    <p>this p tag is without attribute</p>
+    <p lang="fr">this p tag is with attribute</p>
+
+    <input type="text" name="firstname" placeholder="First Name">
+
+    <h3>this is h3 tag for first child</h3>
+    <h3>this is h3 tag for first child</h3>
+    <h3>this is h3 tag for first child</h3>
+    <h3>this is h3 tag for first child</h3>
+    <h3>this is h3 tag for first child</h3>
+    <h3>this is h3 tag for first child</h3>
+    <h3>this is h3 tag for first child</h3>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive image gallery</title>
+    <link rel="icon" href="/icon.png" type="icon">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .bf{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gf {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            flex-direction: row;
+        }
+        .gf img{
+            margin-top: 8px;
+        }
+
+        @media screen and (max-width:420px) {
+            .gf{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        @media screen and (max-width:300px) {
+            .gf{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        @media screen and (max-width:820px) {
+            .gf{
+                flex: 33%;
+                max-width: 33%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bf">
+        <div class="gf">
+            <img src="ani1.jpg" style="width:100%">
+            <img src="ani2.jpg" style="width:100%">
+            <img src="ani3.jpg" style="width:100%">
+            <img src="1.jpg" style="width:100%">
+            <img src="2.jpg" style="width:100%">
+            <img src="3.jpg" style="width:100%">
+            <img src="4.jpg" style="width:100%">
+            <img src="5.jpg" style="width:100%">
+            <img src="6.jpg" style="width:100%">
+            <img src="7.jpg" style="width:100%">
+            <img src="8.jpg" style="width:100%">
+            <img src="9.jpg" style="width:100%">
+            <img src="10.jpg" style="width:100%">
+            <img src="11.jpg" style="width:100%">
+        </div>
+
+        <div class="gf">
+            <img src="5.jpg" style="width:100%">
+            <img src="6.jpg" style="width:100%">
+            <img src="7.jpg" style="width:100%">
+            <img src="8.jpg" style="width:100%">
+            <img src="9.jpg" style="width:100%">
+            <img src="10.jpg" style="width:100%">
+            <img src="ani1.jpg" style="width:100%">
+            <img src="3.jpg" style="width:100%">
+            <img src="ani2.jpg" style="width:100%">
+            <img src="11.jpg" style="width:100%">
+            <img src="ani3.jpg" style="width:100%">
+            <img src="2.jpg" style="width:100%">
+            <img src="1.jpg" style="width:100%">
+            <img src="4.jpg" style="width:100%">
+            
+        </div>
+
+        <div class="gf">
+            <img src="ani1.jpg" style="width:100%">
+            <img src="4.jpg" style="width:100%">
+            <img src="ani2.jpg" style="width:100%">
+            <img src="5.jpg" style="width:100%">
+            <img src="1.jpg" style="width:100%">
+            <img src="2.jpg" style="width:100%">
+            <img src="3.jpg" style="width:100%">
+            <img src="ani3.jpg" style="width:100%">
+            <img src="6.jpg" style="width:100%">
+            <img src="7.jpg" style="width:100%">
+            <img src="9.jpg" style="width:100%">
+            <img src="8.jpg" style="width:100%">
+            <img src="11.jpg" style="width:100%">
+            <img src="10.jpg" style="width:100%">
+        </div>
+
+        <div class="gf">
+            <img src="10.jpg" style="width:100%">
+            <img src="11.jpg" style="width:100%">
+            <img src="4.jpg" style="width:100%">
+            <img src="5.jpg" style="width:100%">
+            <img src="6.jpg" style="width:100%">
+            <img src="7.jpg" style="width:100%">
+            <img src="8.jpg" style="width:100%">
+            <img src="9.jpg" style="width:100%">
+            <img src="ani1.jpg" style="width:100%">
+            <img src="ani2.jpg" style="width:100%">
+            <img src="ani3.jpg" style="width:100%">
+            <img src="1.jpg" style="width:100%">
+            <img src="2.jpg" style="width:100%">
+            <img src="3.jpg" style="width:100%">
+        </div>
+    </div>
+</body>
+</html>

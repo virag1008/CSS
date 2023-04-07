@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All CSS selectors</title>
+    <style type="text/css">
+        p{
+            text-align: center;
+            color: blue;
+        }
+        #para1{
+            text-align: left;
+            color: green;
+        }
+        .center{
+            text-align: right;
+            color: orange;
+        }
+        *{
+            font-family: fantasy;
+            color:red;
+        }
+        h3,h4,h5{
+            font-size: 20px;
+            color: blueviolet;
+        }
+        /* TOTAL 5 SELECTORS= 1.element 2.ID=shown by(#) 3.class shown by(*) 4.universal shown by(*) 5.group */
+    </style>
+</head>
+<body>
+    <!--Below section explain about element selector  -->
+    <p>this style will be applied to all the p tag.</p>
+
+    <!--Below section explain about id selector  -->
+    <p id="para1">This is paragraph using ID selector</p>
+
+    <!--Below section explain about class selector  -->
+    <h2 class="center">this is example of class selector</h2>
+    <p class="center">this is example of class selector</p>
+
+    <!--Below section explain about universal selector  -->
+    <!-- purn page la apply hotat yachya commands -->
+    <!-- *presidence* mule kahi thikani universal selector purn page la apply nahi hot eg.color  -->
+    <h2>this is example of universal selector</h2>
+
+    <!--Below section explain about group selector  -->
+    <h3>this is example of heading 3 tag(group selector) </h3>
+    <h4>this is example of heading 4 tag(group selector) </h4>
+    <h5>this is example of heading 5 tag(group selector) </h5>
+
+</body>
+</html>

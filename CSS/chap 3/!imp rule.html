@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!important keyword</title>
+    <style type="text/css">
+        .class-important h1{
+            color: red!important;
+        }
+        /* if we not asign[!important] then text shown on browser is green ..but we write so the text in browser shows in red */
+        .class-important h1{
+            color:green;
+        }
+        /* latest konti property asign keli ti property bhetate iff !important is not their */
+
+        .class-important h3{
+            color: red!important;
+        }
+        .class-important h3{
+            color: gold!important;
+        }
+        /* in these 2 !important used for latest */
+
+
+    </style>
+</head>
+<body>
+    <div class="class-important">
+        <h1>this is a heading</h1>
+        <h3 style="color:blue !important;">execution of word !important when used more than 2 times for same element...latest color for h3! important is blue so browser show blue..if we remove this blue!important then it show gold colour and that too then red</h3>
+        <!-- latest color for h3! important is blue so browser show blue..if we remove this blue!important then it show gold colour -->
+    </div>
+</body>
+</html>

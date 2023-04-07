@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity rule</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+            background-color: lightgreen;
+            color: red;
+            font-size: 30px;
+        }
+        #abc{
+            background-color: yellow;
+        }
+        /*same property with attribute */
+
+        div[id=abc]{
+            background-color: blue;
+        }
+        /* attribute valya property square bracket madhe lihtat */
+
+        .xyz{
+            background-color:violet;
+        }
+        h2{
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline style is having hightest property -->
+    <!-- after inline -second highest priority #ID  -->
+    <!-- after that classes,attributes and psuedo classes eg. (:focus, :hover etc) -->
+    <!-- lowest priority- elements and psuedo elements eg. (div,h1,:after) -->
+    <!-- for equal weightage- latest have priority -->
+
+    <div id="abc">Highest priority is for ID than attributes </div>
+    <hr>
+    <h2 class="xyz">Higher priority is for class than element</h2>
+</body>
+</html>

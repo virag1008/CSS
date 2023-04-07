@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+        margin: 0;
+    }
+        .one{
+            position: fixed;
+            background-color:gold;
+            border: 1px solid green;
+            left: 0;
+            top: 0;
+        }
+        .two{
+            background-color: rgb(192, 172, 93);
+            border: 1px solid green;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+        .three{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: brown;
+            border: 1px solid green;
+            
+        }
+        .four{
+            clear: both;
+            background-color: red;
+            border: 1px solid green;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        .five{
+           
+            height: 1200px;
+            border: 1px solid red;
+            position: relative;
+            top: 60px;
+        }
+        .six{
+            border: 1px solid red;
+           
+        }
+        .five:hover .six{
+            transform: rotate(20deg);
+
+        }
+        div[class]{
+            padding: 20px;
+           
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one"> this is div 1 </div>
+    <div class="two"> this is div 2 </div>
+    <div class="three"> this is div 3</div>
+    <div class="four"> this is div 4 </div>
+    <div class="five"> this is div 5
+        <span class="six"> this is div 6 </span>
+    </div>
+    
+    <div class="seven"> this is div 7 </div>
+</body>
+</html>

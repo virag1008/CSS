@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .main{
+            height: 500px;
+            background-color: red;
+            animation-name: vj;
+            animation-duration: 4s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-direction: alternate;
+        }
+        @keyframes vj{
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+        .one{
+            padding: 15px;
+            border: 1px solid;
+            float: left;
+            width: 40%;
+        }
+        .two{
+            padding: 15px;
+            border: 1px solid red;
+            float: left;
+            width: 50%;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odio laboriosam perspiciatis ab? Perspiciatis ratione deserunt necessitatibus consequatur harum suscipit veritatis, eaque, perferendis laudantium, accusamus saepe voluptates? Reprehenderit, ad ullam.</div>
+        <div class="two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur sed doloremque sit sint animi, accusantium ad iure magni, inventore nam ex necessitatibus laborum ipsum, distinctio dignissimos tempore quod odio quibusdam!</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css combinators-general sibling</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        h1~p {
+            color: blue;
+            background-color: azure;
+            font-size: 20px;
+        }
+        /* h1 che jevdhe pn p sibling asnar (h1 nantr yenare te)tya sarvana property apply honar */
+        /* general=[~] */
+    </style>
+</head>
+<body>
+    <!-- 4 TYPES of css combinators -->
+    <!-- 1.general sibling 2.adjacent sibling 3.Descendent 4.child -->
+
+    
+    
+    <p> This is the p tag that will gonna affected with general sibling selector css(~)</p>
+    <h1>This is an exaple of general sibling selector(~)</h1>
+    <p> This is the p tag that will gonna affected with general sibling selector css(~)</p>
+    <div> this is div tag 
+        <p> This is the p tag that will not(~) gonna affected with general sibling selector css(~)</p>
+    this is div tag</div>
+    <p> This is the p tag that will gonna affected with general sibling selector css(~)</p>
+    <p> This is the p tag that will gonna affected with general sibling selector css(~)</p>
+</body>
+</html>
